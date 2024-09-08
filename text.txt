@@ -1,0 +1,7 @@
+Example Routes with Sample Data:
+Books by George Orwell: http://localhost:5000/author/George Orwell
+Book titled "1984": http://localhost:5000/title/1984
+Details for ISBN 1: http://localhost:5000/isbn/1
+Reviews for ISBN 1: http://localhost:5000/review/1
+
+

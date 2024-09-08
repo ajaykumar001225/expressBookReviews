@@ -1,0 +1,86 @@
+[
+  {
+    "Task Number": 1,
+    "URL": "http://localhost:5000/",
+    "Operation": "Retrieve a list of all books available in the bookshop",
+    "Example": "GET http://localhost:5000/"
+  },
+  {
+    "Task Number": 2,
+    "URL": "http://localhost:5000/isbn/:isbn",
+    "Operation": "Retrieve book details based on ISBN code",
+    "Example": "GET http://localhost:5000/isbn/1"
+  },
+  {
+    "Task Number": 3,
+    "URL": "http://localhost:5000/author/:author",
+    "Operation": "Retrieve book details based on author name",
+    "Example": "GET http://localhost:5000/author/George%20Orwell"
+  },
+  {
+    "Task Number": 4,
+    "URL": "http://localhost:5000/title/:title",
+    "Operation": "Retrieve book details based on title",
+    "Example": "GET http://localhost:5000/title/1984"
+  },
+  {
+    "Task Number": 5,
+    "URL": "http://localhost:5000/review/:isbn",
+    "Operation": "Retrieve reviews/comments for specified books",
+    "Example": "GET http://localhost:5000/review/1"
+  },
+  {
+    "Task Number": 6,
+    "URL": "http://localhost:5000/customer/register",
+    "Operation": "Register as a new user",
+    "Example": "POST http://localhost:5000/customer/register with body { \"username\": \"newUser\", \"password\": \"newPassword\" }"
+  },
+  {
+    "Task Number": 7,
+    "URL": "http://localhost:5000/customer/login",
+    "Operation": "Login to the application",
+    "Example": "POST http://localhost:5000/customer/login with body { \"username\": \"existingUser\", \"password\": \"password\" }"
+  },
+  {
+    "Task Number": 8,
+    "URL": "http://localhost:5000/auth/review/:isbn",
+    "Operation": "Add a new review for a book (logged-in users only)",
+    "Example": "PUT http://localhost:5000/auth/review/1 with body { \"review\": \"Amazing book!\" }"
+  },
+  {
+    "Task Number": 9,
+    "URL": "http://localhost:5000/auth/review/:isbn",
+    "Operation": "Delete a book review (logged-in users can delete only their own reviews)",
+    "Example": "DELETE http://localhost:5000/auth/review/1"
+  },
+  {
+    "Task Number": 10,
+    "URL": "http://localhost:5000/",
+    "Operation": "Get all books using async callback function",
+    "Example": "GET http://localhost:5000/"
+  },
+  {
+    "Task Number": 11,
+    "URL": "http://localhost:5000/isbn/:isbn",
+    "Operation": "Search by ISBN using Promises",
+    "Example": "GET http://localhost:5000/isbn/1"
+  },
+  {
+    "Task Number": 12,
+    "URL": "http://localhost:5000/author/:author",
+    "Operation": "Search by Author",
+    "Example": "GET http://localhost:5000/author/George%20Orwell"
+  },
+  {
+    "Task Number": 13,
+    "URL": "http://localhost:5000/title/:title",
+    "Operation": "Search by Title",
+    "Example": "GET http://localhost:5000/title/1984"
+  },
+  {
+    "Task Number": 14,
+    "URL": "http://github.com/your-repo-link",
+    "Operation": "Submission of Project GitHub Link",
+    "Example": "Submit the GitHub link for project repository"
+  }
+]
