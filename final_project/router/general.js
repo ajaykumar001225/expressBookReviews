@@ -2,11 +2,14 @@ const express = require('express');
 const bookCollection = require("./booksdb.js");
 const public_users = express.Router();
 
-// Get the book list available in the shop using Promises
-public_users.get('/', (req, res) => {
-    Promise.resolve(bookCollection)
-        .then(books => res.json(books))
-        .catch(error => res.status(500).json({ message: "Error retrieving books." }));
+public_users.get('/', async (req, res) => {
+    try {
+        // Use a promise to get the bookCollection
+        const books = await Promise.resolve(bookCollection);
+        res.json(books);
+    } catch (error) {
+        res.status(500).json({ message: "Error retrieving books." });
+    }
 });
 
 // Get book details based on ISBN using Promises
